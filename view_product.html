@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  
+  
+  <!-- jQuery and jQuery Mobile CSS-->
+  <link rel="stylesheet" href="css/jquery.mobile.min.css">
+  
+  <!-- jQuery and jQuery Mobile Javascript-->
+  <script src="./scripts/jquery.min.js"></script>
+  <script src="./scripts/jquery.mobile.min.js"></script>
+
+  <!-- My CSS-->
+  <link rel="stylesheet" href="css/view_product/view_product.css">
+  <link rel="stylesheet" href="css/commonCSS.css">
+  
+  <!-- My JS-->
+  <script src="./scripts/view_product/view_product.js"></script>
+  <script src="./scripts/commonJS.js"></script>
+  <script src="./backup.js"></script>
+  
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="view_product" data-theme="c">
+    <form  class="dashboardForm">
+    
+    <ul data-role="listview" data-inset="true">
+        <li data-role="fieldcontain" style="background:white">
+			<h2 id="rims.dashboard.header" class="textCenter">
+				Raghuvir Inventory Management System
+			</h2>
+        </li>
+        
+        <li data-role="fieldcontain" style="background:white">
+            <div data-role="content">
+            	<a href="index.html" data-role="button" data-inline="true" data-icon="home" rel="external">Home</a>
+				<a href="settings.html" data-role="button" data-inline="true" data-icon="gear" rel="external">Settings</a>
+			</div>
+        </li>
+
+		<li data-role="fieldcontain" style="background:white">
+			<div style="margin:10px" id="rimsViewProductImage" class="rimsViewProductImage">
+			</div>
+		</li>
+		
+		<li data-role="fieldcontain" style="background:white">
+			<fieldset class="ui-grid-a">
+				<div class="ui-block-a"><label for="name2">Image Path:</label></div>
+				<div id="rimsViewProductImagePath" class="ui-block-b"></div>
+			</fieldset>			
+		</li>
+		
+		<li data-role="fieldcontain" style="background:white">
+			<fieldset class="ui-grid-a">
+				<div class="ui-block-a"><label for="name2">Item Name:</label></div>
+				<div id="rimsViewProductTitle" class="ui-block-b rimsViewProductTitle">
+				</div>
+			</fieldset>
+		</li>
+		<li data-role="fieldcontain" style="background:white">
+			<fieldset class="ui-grid-a">
+				<div class="ui-block-a"><label for="name2">Item Code:</label></div>
+				<div id="rimsViewProductItemCode" class="ui-block-b rimsViewProductItemCode">
+				</div>
+			</fieldset>
+		</li>
+		<li data-role="fieldcontain" style="background:white">
+			<fieldset class="ui-grid-a">
+				<div class="ui-block-a"><label for="name2">Catagoery:</label></div>
+				<div id="rimsViewProductCatagoery" class="ui-block-b rimsViewProductItemCode">
+				</div>
+			</fieldset>
+		</li>
+		
+		<li data-role="fieldcontain" style="background:white">
+			<div data-role="fieldcontain" class="textCenter">
+				<div class="displayInlineFloatCenter textCenter">Materials Used</div>
+				<div class="displayInlineFloatCenter">
+					<a href="#" data-role="button"  data-inline="true" data-mini="true"  data-icon="plus" onclick="addMaterial();">Add</a>
+				</div>
+			</div>
+			<br>
+			<table class="MaterialTable">
+				<tr>
+					<td width="32px"></td>
+					<td class="width25">Material</td>
+					<td class="width20">Quantity</td>
+					<td class="width20">Unit</td>
+					<td class="width22">Unit Price</td>
+					<td style="text-align: right">Cost</td>
+				</tr>
+			</table>
+			<table id="MaterialTable" class="MaterialTable">
+			</table>
+			<br>
+			<div class="textCenter width100">
+				<span class="rimsViewProductMaterialsUsed">Total Cost:</span>
+				<span class="rimsViewProductAddMaterial" id="TotalCost"></span>
+			</div>
+		</li>
+		<li data-role="fieldcontain" style="background:white">
+			<table  class="MaterialTable" id="ProfitTable">
+				<tr>
+					<td class="width22" style="padding:8px">Additional Costs</td>
+					<td class="width20" style="padding:8px">in %</td>
+					<td class="width20" style="padding:8px">Amount</td>
+					<td class="width20" style="padding:8px">Total Cost</td>
+				</tr>
+				<tr style="background:lavender">
+					<td class="width22" style="padding:8px">+ Labour:</td>
+					<td class="width20" id="labourValueTd" style="padding:8px"></td>
+					<td class="width20" style="padding:8px"><span id="labour"></span></td>
+					<td class="width20" style="padding:8px"><span id="totalAfterLabour"></span></td>
+				</tr>
+				<tr>
+					<td class="width22" style="padding:8px">+ Profit:</td>
+					<td class="width20" id="profitValueTd" style="padding:8px"></td>
+					<td class="width20" style="padding:8px"><span id="profit"></span></td>
+					<td class="width20" style="padding:8px"><span id="totalAfterProfit"></span></td>
+				</tr>
+				<tr style="background:lavender">
+					<td class="width22" style="padding:8px">+ Dealer Profit:</td>
+					<td class="width15" id="dealerProfitValueTd" style="padding:8px"></td>
+					<td class="width20" style="padding:8px"><span id="dealerProfit"></span></td>
+					<td class="width20" style="padding:8px"><span id="totalAfterDealerProfit"></span></td>
+				</tr>
+			</table>
+			<br>
+			<div class="textCenter width100">
+				<span class="rimsViewProductMaterialsUsed">Total Price:</span>
+				<span class="rimsViewProductAddMaterial" id="TotalPrice"></span>
+			</div>
+		</li>
+		<li data-role="fieldcontain" style="background:white">
+			<div class="textAlignCenter" data-role="fieldcontain">
+				<a href="" data-role="button" data-icon="back" data-inline="true" onclick="resetData();">Reset</a>
+				<a href="" data-role="button" data-icon="delete"  data-inline="true" onclick="deleteProduct();">Delete Item</a>
+				<a href="" data-role="button" data-icon="check" data-theme="b" data-inline="true" onclick="saveFormData();">Save</a>
+			</div>
+		</li>
+    </ul>
+</form>
+</div>
+</body>
+</html>

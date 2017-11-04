@@ -1,0 +1,114 @@
+.rimsDashboardHeader
+{
+	text-align	: center
+}
+
+.dashboardForm
+{
+	width		: 850px;
+	text-align	: center;
+	margin 	: 0 auto;
+}
+
+
+
+div.ui-content div.ui-input-search
+{
+	width		: 65%; 
+}
+
+div.ui-controlgroup-horizontal div.ui-controlgroup-controls
+{
+	width		: 100%; 
+}
+
+li.ui-field-contain div.rimsViewProductTitle
+{
+
+}
+
+li.ui-field-contain div.rimsViewProductItemCode
+{
+
+}
+
+li.ui-field-contain div.rimsViewProductImage
+{
+	text-align	: center;
+}
+
+.MaterialTable
+{
+	width		: 100%; 
+}
+
+.width50
+{
+	width		: 50%; 
+}
+
+
+.width100
+{
+	width		: 100%; 
+}
+
+
+.width20
+{
+	width		: 20%; 
+}
+
+
+tr td span
+{
+	display		: block;
+	width		: 100%; 
+}
+
+
+.rimsMaterialMaterials
+{
+	display:inline;
+	float:center;
+	text-align	: center;	
+}
+
+
+.rimsMaterialAddMaterial
+{
+	display:inline;
+	float:center;
+}
+
+.MaterialsHeader
+{
+	text-align	: center;
+}
+
+.textAlignCenter
+{	
+	text-align	: center;
+}
+
+
+div.rimsViewProductItemCode span
+{	
+	display	: block;
+	width		: 50%; 
+}
+
+.error_box {
+    background:#FAD3C4;
+    border:1px solid #A75B4E;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    color:#444444;
+    display:none;
+    font-size:13px;
+    margin:0px 0px 15px 0px;
+    padding:8px 8px;
+    width:672px;
+}
+

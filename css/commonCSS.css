@@ -1,0 +1,84 @@
+.width50
+{
+	width		: 50%; 
+}
+
+
+.width10
+{
+	width		: 10%; 
+}
+
+
+.width100
+{
+	width		: 100%; 
+}
+
+
+.width20
+{
+	width		: 20%; 
+}
+
+
+.width25
+{
+	width		: 25%; 
+}
+
+
+.width22
+{
+	width		: 22%; 
+}
+
+
+.width33
+{
+	width		: 33%; 
+}
+
+
+.width40
+{
+	width		: 40%; 
+}
+
+.textCenter
+{
+	text-align: center
+}
+
+
+.rimsDashboardHeader
+{
+	text-align	: center
+}
+
+.dashboardForm
+{
+	width		: 850px;
+	text-align	: center;
+	margin 	: 0 auto;
+}
+
+.error_box {
+    background	:#FAD3C4;
+    border		:1px solid #A75B4E;
+    border-radius	:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius	:5px;
+    color		:#444444;
+    display		:none;
+    font-size		:13px;
+    margin		:0px 0px 15px 0px;
+    padding		:8px 8px;
+    width		:672px;
+}
+
+.displayInlineFloatCenter
+{
+	display	:inline;
+	float		:center;
+}

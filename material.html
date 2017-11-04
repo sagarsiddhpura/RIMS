@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  
+  
+  <!-- jQuery and jQuery Mobile CSS-->
+  <link rel="stylesheet" href="css/jquery.mobile.min.css">
+  
+  <!-- jQuery and jQuery Mobile Javascript-->
+  <script src="./scripts/jquery.min.js"></script>
+  <script src="./scripts/jquery.mobile.min.js"></script>
+
+  <!-- My CSS-->
+  <link rel="stylesheet" href="css/material/material.css">
+  <link rel="stylesheet" href="css/commonCSS.css">
+  
+  <!-- My JS-->
+  <script src="./scripts/material/material.js"></script>
+  <script src="./scripts/commonJS.js"></script>
+  <script src="./backup.js"></script>
+  
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="material" data-theme="c">
+    <form name="material_form" class="dashboardForm">
+    
+    <ul data-role="listview" data-inset="true">
+        <li data-role="fieldcontain">
+			<h2 id="rims.dashboard.header" class="textCenter">
+				Raghuvir Inventory Management System
+			</h2>
+        </li>
+        
+        <li data-role="fieldcontain">
+            <div data-role="content">
+            	<a href="index.html" data-role="button" data-inline="true" data-icon="home" rel="external">Home</a>
+		<a href="settings.html" data-role="button" data-inline="true" data-icon="gear" rel="external">Settings</a>
+ 	    </div>
+        </li>
+        
+		<li data-role="fieldcontain">
+			<div>
+				 <ul data-role="listview" data-inset="true">
+						<li data-role="fieldcontain">
+						<div data-role="fieldcontain" class="MaterialsHeader">
+							<div class="rimsMaterialMaterials">Materials</div>
+							<div class="rimsMaterialAddMaterial">
+								<a href="#" data-role="button"  data-inline="true" data-mini="true"  data-icon="plus" onclick="addMaterial();">Add</a>
+							</div>
+							</div>
+							<br>
+							<table class="MaterialTable">
+								<tr>
+									<td width="32px"></td>
+									<td class="width33">Material</td>
+									<td class="width33">Unit Price</td>
+									<td>Unit</td>
+								</tr>
+							</table>
+							<table id="rimsMaterialTable" class="MaterialTable">
+							</table>
+							 <div class="error_box"></div>
+						</li>
+						<li data-role="fieldcontain">
+						<div class="textAlignCenter">
+							<a href="" data-role="button" data-icon="back" data-inline="true" onclick="location.reload();">Reset</a>
+							<a href="" data-role="button" data-icon="check" data-theme="b" data-inline="true" onclick="saveFormData();">Save</a>
+						</div>
+						</li>
+					</ul>
+			</div>
+		</li>
+    </ul>
+</form>
+</div>
+</body>
+</html>

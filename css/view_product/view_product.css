@@ -1,0 +1,80 @@
+.rimsDashboardHeader
+{
+	text-align	: center
+}
+
+.dashboardForm
+{
+	width		: 850px;
+	text-align	: center;
+	margin 	: 0 auto;
+}
+
+
+
+div.ui-content div.ui-input-search
+{
+	width		: 65%; 
+}
+
+div.ui-controlgroup-horizontal div.ui-controlgroup-controls
+{
+	width		: 100%; 
+}
+
+li.ui-field-contain div.rimsViewProductTitle
+{
+
+}
+
+li.ui-field-contain div.rimsViewProductItemCode
+{
+
+}
+
+li.ui-field-contain div.rimsViewProductImage
+{
+	text-align	: center;
+}
+
+.MaterialTable
+{
+	width		: 100%; 
+}
+
+
+tr td span
+{
+	display	: block;
+	width		: 100%; 
+}
+
+
+.MaterialsHeader
+{
+	text-align	: center;
+}
+
+.textAlignCenter
+{	
+	text-align	: center;
+}
+
+
+.DeleteButton
+{	
+	float		:left;
+}
+
+
+div.rimsViewProductItemCode span
+{	
+	display	: block;
+	width		: 50%; 
+}
+
+
+.ItemName
+{
+	margin-top	:15px;
+}

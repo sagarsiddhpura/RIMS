@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  
+  <!-- jQuery and jQuery Mobile CSS -->
+  <link rel="stylesheet" href="css/jquery.mobile.min.css">
+  
+  <!-- jQuery and jQuery Mobile Javascript -->
+  <script src="./scripts/jquery.min.js"></script>
+  <script src="./scripts/jquery.mobile.min.js"></script>
+
+  <!-- Shuffle JS -->
+  <script src="./scripts/jquery.shuffle.min.js"></script>
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/dashboard/myDashboard.css">
+  <link rel="stylesheet" href="css/commonCSS.css">
+
+  <!-- My JS -->
+  <script src="./scripts/dashboard/dashboard.js"></script>
+  <script src="./scripts/commonJS.js"></script>
+  <script src="./backup.js"></script>
+  
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="dashboard" data-theme="c">
+    <form  class="dashboardForm">
+    
+    <ul data-role="listview" data-inset="true">
+        <li data-role="fieldcontain">
+			<h2 id="rims.dashboard.header" class="textCenter">
+				Raghuvir Inventory Management System
+			</h2>
+        </li>
+        
+        <li data-role="fieldcontain">
+            <div data-role="content">
+		<a href="index.html" data-role="button" data-inline="true" data-icon="home" rel="external">Home</a>
+		<a href="settings.html" data-role="button" data-inline="true" data-icon="gear" rel="external">Settings</a>
+		<!-- Home <a href="generate_order.html" data-role="button" data-inline="true" data-icon="bars" rel="external">Generate Order</a>-->
+	    </div>
+        </li>
+        
+        <li data-role="fieldcontain" id="grid">
+			<div id="Selectors" data-role="content">
+				<div data-role="controlgroup" data-type="horizontal"  data-mini="true" id="CatagorySelector">
+					<a href="index.html" data-role="button" id="Swings">Swings</a>
+					<a href="index.html" data-role="button" id="Slides">Slides</a>
+					<a href="index.html" data-role="button" id="Climbers">Climbers</a>
+					<a href="index.html" data-role="button" id="See Saws">See Saws</a>
+					<a href="index.html" data-role="button" id="Merry Go Round">Merry Go Round</a>
+					<a href="index.html" data-role="button" id="Exercise Range">Exercise Range</a>
+					<a href="index.html" data-role="button" id="Garden Range">Garden Range</a>
+					<a href="index.html" data-role="button" id="MultiPlaySystem">MultiPlaySystem</a>
+				</div>
+			</div>
+		</li>
+    </ul>
+</form>
+</div>
+</body>
+</html>

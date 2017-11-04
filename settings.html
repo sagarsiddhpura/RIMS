@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  
+  <!-- jQuery and jQuery Mobile CSS-->
+  <link rel="stylesheet" href="css/jquery.mobile.min.css">
+  
+  <!-- jQuery and jQuery Mobile Javascript-->
+  <script src="./scripts/jquery.min.js"></script>
+  <script src="./scripts/jquery.mobile.min.js"></script>
+
+  <script>
+  jQuery = jQuery.noConflict( true );
+  </script>
+  <!-- My CSS-->
+  <link rel="stylesheet" href="css/commonCSS.css">
+  
+  <!-- My JS-->
+  <script src="./scripts/settings/settings.js"></script>
+  <script src="./scripts/commonJS.js"></script>
+  <script src="./backup.js"></script>
+  
+
+  
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="settings" data-theme="c">
+    <form name="settings_form" id="settings_form" class="dashboardForm" method="POST">
+    
+    <ul data-role="listview" data-inset="true">
+        <li data-role="fieldcontain">
+			<h2 id="rims.dashboard.header" class="rimsDashboardHeader">
+				Raghuvir Inventory Management System
+			</h2>
+        </li>
+        
+        <li data-role="fieldcontain">
+            <div data-role="content">
+            	<a href="index.html" data-role="button" data-inline="true" data-icon="home" rel="external">Home</a>
+		<a href="settings.html" data-role="button" data-inline="true" data-icon="gear" rel="external">Settings</a>
+ 	    </div>
+        </li>
+        
+		<li data-role="fieldcontain">
+			<div>
+				 <ul data-role="listview" data-inset="true">
+						<li data-role="fieldcontain">
+						<div data-role="fieldcontain">
+							<br>
+							<table class="width100">
+								<tr>
+									<td class="width10"></td>
+									<td class="width50">Manage Materials</td>
+									<td><a href="#" data-role="button"  data-inline="true" data-mini="true"  data-icon="edit" onclick="manageMaterials();">Manage</a></td>
+								</tr>
+								<tr>
+									<td class="width10"></td>
+									<td class="width50">Save Data to backup file:</td>
+									<td><a href="#" data-role="button"  data-inline="true" data-mini="true"  data-icon="check" onclick="saveData();">Save</a></td>
+								</tr>
+								<tr>
+									<td class="width10"></td>
+									<td class="width50">Load Data from backup file:</td>
+									<td>
+										<input type="file" data-inline="true" data-mini="true" name="loadFile" id="loadFile"/>
+									</td>
+								</tr>
+							</table>
+							 <div class="error_box"></div>
+						</li>
+					</ul>
+			</div>
+		</li>
+    </ul>
+</form>
+</div>
+</body>
+</html>
